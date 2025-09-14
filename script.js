@@ -59,7 +59,7 @@ function checkAnswer(selectedOption) {
         setTimeout(() => {
             currentQuestionIndex++;
             showQuestion();
-        }, 8000); // 8 segundos de espera
+        }, 9000); // 8 segundos de espera
     } else {
         alert("¡Casi! Inténtalo de nuevo, mi amor. 🥰");
     }
@@ -76,3 +76,4 @@ function showFinalMessage() {
 // Inicia el juego cuando la página carga
 
 document.addEventListener('DOMContentLoaded', showQuestion);
+
