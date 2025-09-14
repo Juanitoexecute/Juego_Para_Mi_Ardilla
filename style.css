@@ -1,0 +1,107 @@
+body {
+    background-color: #fce4ec; /* Un rosa pastel */
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff69b4; /* Rosa fuerte */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+p {
+    font-size: 1.2em;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.options-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    background-color: #ff8c61; /* Naranja-melocotón */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #ff7f50; /* Naranja más oscuro */
+    transform: translateY(-3px);
+}
+
+.message {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #ff1493; /* Rosa brillante */
+    margin-top: 30px;
+    animation: heartBeat 1.5s infinite;
+}
+
+.final-message {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    color: #ff69b4;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.message-image {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.05); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
