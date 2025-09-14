@@ -21,7 +21,7 @@ const questions = [
         question: "¿El niño dice que te ama mucho, con que compararias el amor que siente por ti?",
         options: ["El universo", "La eternidad", "Una mirada"],
         answer: "Una mirada",
-        message: "Así es, amor. Esa mirada, una mirada que cuando la recibo me pasan frente a los ojos todo el universo y siento que la vida es eternna contigo. te amoooo."
+        message: "Así es, amor. Esa mirada, una mirada que cuando la recibo me pasa frente a los ojos el universo entero y siento que la vida es eternna contigo. te amoooo."
     },
     {
         question: "¿Qué es lo que más amo de ti?",
@@ -74,4 +74,5 @@ function showFinalMessage() {
 }
 
 // Inicia el juego cuando la página carga
+
 document.addEventListener('DOMContentLoaded', showQuestion);
